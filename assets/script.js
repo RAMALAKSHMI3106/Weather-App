@@ -23,26 +23,26 @@ search.addEventListener('click', () => {
             const hum = document.querySelector('.weather-details .hum span');
             const wind = document.querySelector('.weather-details .wind span');
 
-            // Update weather image based on the weather condition
+            
             switch (json.weather[0].main) {
                 case 'Clear':
-                    image.src = 'clear.png';
+                    image.src = 'images/clear.png';
                     break;
                 case 'Rain':
-                    image.src = 'rain.png';
+                    image.src = 'images/rain.png';
                     break;
                 case 'Snow':
-                    image.src = 'snow.png';
+                    image.src = 'images/snow.png';
                     break;
                 case 'Clouds':
-                    image.src = 'cloud.png';
+                    image.src = 'images/cloud.png';
                     break;
                 case 'Mist':
                 case 'Haze':
-                    image.src = 'mist.png';
+                    image.src = 'images/mist.png';
                     break;
                 default:
-                    image.src = 'default.png'; 
+                    image.src = 'images/default.png'; 
                     break;
             }
 
@@ -57,6 +57,6 @@ search.addEventListener('click', () => {
             weatherd.style.display = 'block';
         })
         .catch(error => {
-            alert(error.message); // Alert user if there's an error
+            alert(error.message); 
         });
 });

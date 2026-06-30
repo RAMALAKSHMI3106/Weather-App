@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("background.jpg") center/cover no-repeat;
+    background: url("images/background.jpg") center/cover no-repeat;
 }
 
 .container {
@@ -78,8 +78,8 @@ body {
 }
 
 .weather-box img {
-    width: 100%; /* Use percentage for responsiveness */
-    max-width: 100px; /* Set a max width */
+    width: 100%; 
+    max-width: 100px; 
 }
 
 .weather-box .temparature {
@@ -133,14 +133,14 @@ body {
     font-weight: 500;
 }
 
-/* Media query for responsiveness */
+
 @media (max-width: 480px) {
     .container {
         width: 90%;
-        height: auto; /* Allow height to adjust */
+        height: auto; 
     }
     
     .weather-box img {
-        max-width: 80px; /* Adjust size for smaller screens */
+        max-width: 80px; 
     }
 }
